@@ -1,0 +1,9 @@
+cupsctl --remote-admin --remote-any --share-printers
+scanimage --device-name "airscan:e0:Canon LiDE 400 (USB)" --output-file out2.png --resolution 300 --mode Color
+stdbuf --output L /home/yupeng/minipc/get_usb_data.sh 1 027 > /tmp/t1
+
+https://docs.kernel.org/usb/usbmon.html
+modprobe usbmon
+
+sudo udevadm control --reload
+sudo systemctl restart udev

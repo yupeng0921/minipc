@@ -1,0 +1,8 @@
+[Unit]
+Description=check disk mount status
+
+[Service]
+ExecStart=/bin/bash /home/yupeng/minipc/disk_check.sh
+
+[Install]
+WantedBy=multi-user.target
